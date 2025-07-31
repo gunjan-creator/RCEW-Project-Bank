@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: fusion-fullstack
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      - key: PORT
+        value: 3000
+      - key: MONGO_URI
+        value: mongodb+srv://tamannaya0104:<tamannayadav101>@cluster0123.dkg39gi.mongodb.net/
